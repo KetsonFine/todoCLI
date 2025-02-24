@@ -1,5 +1,7 @@
 # Ignore compiled Java files
 *.class
+.vscode/settings.json
+
 
 # Ignore IDE project files (e.g., IntelliJ, Eclipse)
 .idea/
