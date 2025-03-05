@@ -16,6 +16,11 @@ public class TaskList {
         
     }
 
+    public void removeItem(int id){
+
+        items.remove(id - 1);
+    }
+
     public void addItem (String name){
 
         TaskItem newTask = new TaskItem(itemCount,name);

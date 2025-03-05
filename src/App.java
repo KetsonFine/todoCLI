@@ -61,6 +61,7 @@ public class App {
                 break;
 
                 case 2: 
+                    System.out.println("\nAll List(s):");
                     manager.displayList();
 
                 break;
@@ -71,6 +72,15 @@ public class App {
                     int listID = Integer.parseInt(userScan.nextLine());
                     TaskList foundList = manager.findList(listID);
                     updateList(foundList);
+                break;
+
+                case 4:
+                    int id;
+                    manager.displayList();
+                    System.out.print("\nWhich item would you like to delete: ");
+                    id = Integer.parseInt(userScan.nextLine());
+                    manager.removeItem(id);
+                    
                 break;
 
 
@@ -106,11 +116,16 @@ public class App {
                 break;
 
                 case 2:
+                    System.out.println("\nAll Task(s):");
                     list.displayItems();
                 break;
 
                 case 3:
                     list.displayItems();
+                    int id;
+                    System.out.print("\nWhich item would you like to delete: ");
+                    id = Integer.parseInt(userScan.nextLine());
+                    list.removeItem(id);
                 break;
 
                 case 4:

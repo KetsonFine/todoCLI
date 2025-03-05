@@ -17,6 +17,10 @@ public class TaskListManager {
         listArray.add(newList);
         listCount++;
     }
+    public void removeItem(int id){
+        
+        listArray.remove(id-1);
+    }
 
     public void displayList(){
 
